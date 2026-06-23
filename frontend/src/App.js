@@ -4,6 +4,7 @@ import HomePage from "./pages/HomePage";
 import LoginPage from "./pages/auth/LoginPage";
 import RegisterPage from "./pages/auth/RegisterPage";
 import PatientHome from "./pages/patient/PatientHome";
+import PriseRdvPage from "./pages/patient/PriseRdvPage";
 import "./index.css";
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         <Route path="/login" element={<LoginPage />} />
         <Route path="/register" element={<RegisterPage />} />
         <Route path="/patient" element={<PatientHome />} />
+        <Route path="/patient/rdv" element={<PriseRdvPage />} />
       </Routes>
     </BrowserRouter>
   );
