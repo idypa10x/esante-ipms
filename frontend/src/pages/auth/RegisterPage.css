@@ -1,0 +1,103 @@
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+  background: linear-gradient(135deg, #FFFFFF 60%, #E6FFF5 100%);
+  padding: 40px 20px;
+}
+
+.register-card {
+  background-color: var(--blanc);
+  border-radius: 24px;
+  padding: 48px 40px;
+  width: 480px;
+  box-shadow: var(--shadow);
+}
+
+.register-card h2 {
+  font-size: 28px;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+.register-card h2 span {
+  color: var(--vert-fonce);
+}
+
+.register-card p {
+  color: var(--gris);
+  font-size: 14px;
+  margin-bottom: 32px;
+}
+
+.form-row {
+  display: flex;
+  gap: 16px;
+}
+
+.form-row .form-group {
+  flex: 1;
+}
+
+.role-selector {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 8px;
+}
+
+.role-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  border-radius: 12px;
+  border: 2px solid #E0E0E0;
+  background-color: var(--blanc);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--gris);
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.role-btn:hover {
+  border-color: var(--vert);
+  color: var(--texte);
+}
+
+.role-btn.active {
+  border-color: var(--vert);
+  background-color: var(--vert-clair);
+  color: var(--texte);
+}
+
+.register-btn {
+  width: 100%;
+  padding: 14px;
+  background-color: var(--vert);
+  color: var(--texte);
+  font-weight: 700;
+  font-size: 16px;
+  border-radius: 12px;
+  margin-top: 10px;
+  transition: all 0.2s;
+}
+
+.register-btn:hover {
+  background-color: var(--vert-fonce);
+  transform: scale(1.02);
+}
+
+.register-footer {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 13px;
+  color: var(--gris);
+}
+
+.register-footer a {
+  color: var(--vert-fonce);
+  font-weight: 600;
+}
