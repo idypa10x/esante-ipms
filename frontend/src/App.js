@@ -8,6 +8,7 @@ import PriseRdvPage from "./pages/patient/PriseRdvPage";
 import OrdonnancesPage from "./pages/patient/OrdonnancesPage";
 import DossierPage from "./pages/patient/DossierPage";
 import CommandePage from "./pages/patient/CommandePage";
+import MedecinHome from "./pages/medecin/MedecinHome";
 import "./index.css";
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
         <Route path="/patient/ordonnances" element={<OrdonnancesPage />} />
         <Route path="/patient/dossier" element={<DossierPage />} />
         <Route path="/patient/commande" element={<CommandePage />} />
+        <Route path="/medecin" element={<MedecinHome />} />
       </Routes>
     </BrowserRouter>
   );
