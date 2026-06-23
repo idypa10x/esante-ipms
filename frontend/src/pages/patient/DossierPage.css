@@ -1,0 +1,132 @@
+.dossier-container {
+  padding: 40px;
+  background-color: var(--gris-clair);
+  min-height: 90vh;
+}
+
+.dossier-container h1 {
+  font-size: 28px;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+.dossier-container h1 span {
+  color: var(--vert-fonce);
+}
+
+.dossier-container > p {
+  color: var(--gris);
+  margin-bottom: 32px;
+}
+
+.dossier-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 24px;
+}
+
+.dossier-profil {
+  background-color: var(--blanc);
+  border-radius: 20px;
+  padding: 28px;
+  box-shadow: var(--shadow);
+  text-align: center;
+}
+
+.dossier-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: var(--vert-clair);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 36px;
+  margin: 0 auto 16px;
+}
+
+.dossier-profil h2 {
+  font-size: 18px;
+  font-weight: 800;
+  margin-bottom: 4px;
+}
+
+.dossier-profil p {
+  font-size: 13px;
+  color: var(--gris);
+  margin-bottom: 20px;
+}
+
+.info-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #F0F0F0;
+  font-size: 13px;
+}
+
+.info-item span:first-child {
+  color: var(--gris);
+}
+
+.info-item span:last-child {
+  font-weight: 600;
+}
+
+.dossier-contenu {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.dossier-section {
+  background-color: var(--blanc);
+  border-radius: 20px;
+  padding: 24px 28px;
+  box-shadow: var(--shadow);
+}
+
+.dossier-section h3 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: var(--vert-fonce);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.antecedent-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.antecedent-tag {
+  padding: 6px 14px;
+  background-color: var(--vert-clair);
+  color: var(--vert-fonce);
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.consultation-item {
+  padding: 14px 0;
+  border-bottom: 1px solid #F0F0F0;
+}
+
+.consultation-item:last-child {
+  border-bottom: none;
+}
+
+.consultation-item h4 {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.consultation-item p {
+  font-size: 13px;
+  color: var(--gris);
+}
