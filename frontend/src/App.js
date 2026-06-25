@@ -16,6 +16,8 @@ import PatientsListPage from "./pages/medecin/PatientsListPage";
 import MessagerieMedecinPage from "./pages/medecin/MessagerieMedecinPage";
 import StatistiquesPage from "./pages/medecin/StatistiquesPage";
 import CartePharmaciePage from "./pages/CartePharmaciePage";
+import PharmacienHome from "./pages/pharmacien/PharmacienHome";
+import StockPage from "./pages/pharmacien/StockPage";
 import "./index.css";
 
 function App() {
@@ -39,6 +41,8 @@ function App() {
         <Route path="/medecin/messagerie" element={<MessagerieMedecinPage />} />
         <Route path="/medecin/statistiques" element={<StatistiquesPage />} />
         <Route path="/carte" element={<CartePharmaciePage />} />
+        <Route path="/pharmacien" element={<PharmacienHome />} />
+        <Route path="/pharmacien/stock" element={<StockPage />} />
       </Routes>
     </BrowserRouter>
   );

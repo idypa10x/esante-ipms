@@ -1,0 +1,142 @@
+.stock-container {
+  padding: 40px;
+  background-color: var(--gris-clair);
+  min-height: 90vh;
+}
+
+.stock-container h1 {
+  font-size: 28px;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+.stock-container h1 span {
+  color: var(--vert-fonce);
+}
+
+.stock-container > p {
+  color: var(--gris);
+  margin-bottom: 32px;
+}
+
+.stock-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.stock-search {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: var(--blanc);
+  border-radius: 14px;
+  padding: 12px 20px;
+  box-shadow: var(--shadow);
+  flex: 1;
+  max-width: 380px;
+}
+
+.stock-search input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+
+.btn-ajouter-stock {
+  padding: 12px 24px;
+  background-color: var(--vert);
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 700;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn-ajouter-stock:hover {
+  background-color: var(--vert-fonce);
+  transform: scale(1.02);
+}
+
+.stock-table {
+  background-color: var(--blanc);
+  border-radius: 20px;
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.stock-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.stock-table thead {
+  background-color: var(--vert-clair);
+}
+
+.stock-table th {
+  padding: 16px 20px;
+  text-align: left;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--vert-fonce);
+}
+
+.stock-table td {
+  padding: 14px 20px;
+  font-size: 13px;
+  border-bottom: 1px solid #F5F5F5;
+}
+
+.stock-table tr:last-child td {
+  border-bottom: none;
+}
+
+.stock-table tr:hover td {
+  background-color: var(--gris-clair);
+}
+
+.badge-stock {
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.badge-stock.ok {
+  background-color: var(--vert-clair);
+  color: var(--vert-fonce);
+}
+
+.badge-stock.faible {
+  background-color: #FFF3CD;
+  color: #856404;
+}
+
+.badge-stock.rupture {
+  background-color: #FFE8E8;
+  color: #CC0000;
+}
+
+.btn-modifier {
+  padding: 6px 14px;
+  background-color: var(--vert-clair);
+  color: var(--vert-fonce);
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 700;
+  transition: all 0.2s;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-modifier:hover {
+  background-color: var(--vert);
+  color: var(--texte);
+}
