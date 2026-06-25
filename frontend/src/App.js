@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/layout/Navbar";
+import Footer from "./components/layout/Footer";
 import HomePage from "./pages/HomePage";
 import LoginPage from "./pages/auth/LoginPage";
 import RegisterPage from "./pages/auth/RegisterPage";
@@ -52,6 +53,7 @@ function App() {
         <Route path="/admin" element={<AdminHome />} />
         <Route path="/recherche-medicament" element={<RechercheMedicamentPage />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   );
 }
