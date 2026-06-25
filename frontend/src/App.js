@@ -18,6 +18,7 @@ import StatistiquesPage from "./pages/medecin/StatistiquesPage";
 import CartePharmaciePage from "./pages/CartePharmaciePage";
 import PharmacienHome from "./pages/pharmacien/PharmacienHome";
 import StockPage from "./pages/pharmacien/StockPage";
+import CommandesPharmacienPage from "./pages/pharmacien/CommandesPharmacienPage";
 import "./index.css";
 
 function App() {
@@ -43,6 +44,7 @@ function App() {
         <Route path="/carte" element={<CartePharmaciePage />} />
         <Route path="/pharmacien" element={<PharmacienHome />} />
         <Route path="/pharmacien/stock" element={<StockPage />} />
+        <Route path="/pharmacien/commandes" element={<CommandesPharmacienPage />} />
       </Routes>
     </BrowserRouter>
   );

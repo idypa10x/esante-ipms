@@ -1,0 +1,144 @@
+.commandes-pharmacien-container {
+  padding: 40px;
+  background-color: var(--gris-clair);
+  min-height: 90vh;
+}
+
+.commandes-pharmacien-container h1 {
+  font-size: 28px;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+.commandes-pharmacien-container h1 span {
+  color: var(--vert-fonce);
+}
+
+.commandes-pharmacien-container > p {
+  color: var(--gris);
+  margin-bottom: 32px;
+}
+
+.commandes-tabs {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 28px;
+}
+
+.tab-btn {
+  padding: 10px 24px;
+  border-radius: 24px;
+  border: 2px solid #E0E0E0;
+  background-color: var(--blanc);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--gris);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.tab-btn:hover {
+  border-color: var(--vert);
+  color: var(--texte);
+}
+
+.tab-btn.active {
+  border-color: var(--vert);
+  background-color: var(--vert);
+  color: var(--texte);
+}
+
+.commandes-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.commande-card-pharmacien {
+  background-color: var(--blanc);
+  border-radius: 20px;
+  padding: 24px 28px;
+  box-shadow: var(--shadow);
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.commande-card-pharmacien-info h3 {
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.commande-card-pharmacien-info p {
+  font-size: 13px;
+  color: var(--gris);
+  margin-bottom: 4px;
+}
+
+.commande-medicaments-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.commande-med-tag {
+  padding: 4px 12px;
+  background-color: var(--vert-clair);
+  color: var(--vert-fonce);
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.commande-card-pharmacien-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.commande-total {
+  font-size: 18px;
+  font-weight: 900;
+  color: var(--vert-fonce);
+}
+
+.btn-preparer {
+  padding: 10px 20px;
+  background-color: var(--vert);
+  border-radius: 10px;
+  font-size: 13px;
+  font-weight: 700;
+  transition: all 0.2s;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-preparer:hover {
+  background-color: var(--vert-fonce);
+}
+
+.badge-commande {
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.badge-commande.en-attente {
+  background-color: #FFF3CD;
+  color: #856404;
+}
+
+.badge-commande.en-preparation {
+  background-color: #E3F2FD;
+  color: #1565C0;
+}
+
+.badge-commande.livree {
+  background-color: var(--vert-clair);
+  color: var(--vert-fonce);
+}
