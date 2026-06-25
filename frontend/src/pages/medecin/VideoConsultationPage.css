@@ -1,0 +1,241 @@
+.video-container {
+  padding: 40px;
+  background-color: var(--gris-clair);
+  min-height: 90vh;
+}
+
+.video-container h1 {
+  font-size: 28px;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+.video-container h1 span {
+  color: var(--vert-fonce);
+}
+
+.video-container > p {
+  color: var(--gris);
+  margin-bottom: 32px;
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 24px;
+}
+
+.video-main {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.video-screen {
+  background-color: #1A1A2E;
+  border-radius: 20px;
+  height: 420px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.video-screen .patient-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.video-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  color: white;
+}
+
+.video-placeholder .avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: var(--vert-clair);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 48px;
+}
+
+.video-placeholder h3 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.video-placeholder p {
+  font-size: 14px;
+  color: #AAAAAA;
+}
+
+.video-self {
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+  width: 140px;
+  height: 100px;
+  background-color: #2D2D44;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 13px;
+  border: 2px solid var(--vert);
+}
+
+.video-controls {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  padding: 20px;
+  background-color: var(--blanc);
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+}
+
+.ctrl-btn {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  cursor: pointer;
+  border: none;
+  transition: all 0.2s;
+}
+
+.ctrl-btn.mute {
+  background-color: var(--vert-clair);
+  color: var(--vert-fonce);
+}
+
+.ctrl-btn.mute.active {
+  background-color: #FFE8E8;
+  color: #CC0000;
+}
+
+.ctrl-btn.camera {
+  background-color: var(--vert-clair);
+  color: var(--vert-fonce);
+}
+
+.ctrl-btn.camera.active {
+  background-color: #FFE8E8;
+  color: #CC0000;
+}
+
+.ctrl-btn.end {
+  background-color: #FF4D4D;
+  color: white;
+  width: 64px;
+  height: 64px;
+  font-size: 24px;
+}
+
+.ctrl-btn.end:hover {
+  background-color: #CC0000;
+  transform: scale(1.1);
+}
+
+.ctrl-btn.screen {
+  background-color: var(--vert-clair);
+  color: var(--vert-fonce);
+}
+
+.video-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.patient-info-card {
+  background-color: var(--blanc);
+  border-radius: 20px;
+  padding: 24px;
+  box-shadow: var(--shadow);
+}
+
+.patient-info-card h3 {
+  font-size: 16px;
+  font-weight: 800;
+  margin-bottom: 16px;
+  color: var(--vert-fonce);
+}
+
+.info-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  padding: 8px 0;
+  border-bottom: 1px solid #F0F0F0;
+}
+
+.info-row span:first-child {
+  color: var(--gris);
+}
+
+.info-row span:last-child {
+  font-weight: 600;
+}
+
+.notes-video {
+  background-color: var(--blanc);
+  border-radius: 20px;
+  padding: 24px;
+  box-shadow: var(--shadow);
+  flex: 1;
+}
+
+.notes-video h3 {
+  font-size: 16px;
+  font-weight: 800;
+  margin-bottom: 16px;
+  color: var(--vert-fonce);
+}
+
+.notes-video textarea {
+  width: 100%;
+  height: 160px;
+  padding: 12px;
+  border: 2px solid #E0E0E0;
+  border-radius: 12px;
+  font-size: 13px;
+  outline: none;
+  resize: none;
+  font-family: inherit;
+  transition: border-color 0.2s;
+}
+
+.notes-video textarea:focus {
+  border-color: var(--vert);
+}
+
+.btn-ordonnance-video {
+  width: 100%;
+  padding: 12px;
+  background-color: var(--vert);
+  color: var(--texte);
+  font-weight: 700;
+  font-size: 14px;
+  border-radius: 12px;
+  margin-top: 12px;
+  transition: all 0.2s;
+}
+
+.btn-ordonnance-video:hover {
+  background-color: var(--vert-fonce);
+}
