@@ -13,6 +13,9 @@ import OrdonnancePage from "./pages/medecin/OrdonnancePage";
 import VideoConsultationPage from "./pages/medecin/VideoConsultationPage";
 import PlanningPage from "./pages/medecin/PlanningPage";
 import PatientsListPage from "./pages/medecin/PatientsListPage";
+import MessagerieMedecinPage from "./pages/medecin/MessagerieMedecinPage";
+import StatistiquesPage from "./pages/medecin/StatistiquesPage";
+import CartePharmaciePage from "./pages/CartePharmaciePage";
 import "./index.css";
 
 function App() {
@@ -33,6 +36,9 @@ function App() {
         <Route path="/medecin/video" element={<VideoConsultationPage />} />
         <Route path="/medecin/planning" element={<PlanningPage />} />
         <Route path="/medecin/patients" element={<PatientsListPage />} />
+        <Route path="/medecin/messagerie" element={<MessagerieMedecinPage />} />
+        <Route path="/medecin/statistiques" element={<StatistiquesPage />} />
+        <Route path="/carte" element={<CartePharmaciePage />} />
       </Routes>
     </BrowserRouter>
   );

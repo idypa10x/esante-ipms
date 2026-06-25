@@ -1,0 +1,158 @@
+.carte-container {
+  padding: 40px;
+  background-color: var(--gris-clair);
+  min-height: 90vh;
+}
+
+.carte-container h1 {
+  font-size: 28px;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+.carte-container h1 span {
+  color: var(--vert-fonce);
+}
+
+.carte-container > p {
+  color: var(--gris);
+  margin-bottom: 32px;
+}
+
+.carte-layout {
+  display: grid;
+  grid-template-columns: 340px 1fr;
+  gap: 24px;
+}
+
+.pharmacies-liste {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  max-height: 620px;
+  overflow-y: auto;
+}
+
+.pharmacie-card {
+  background-color: var(--blanc);
+  border-radius: 18px;
+  padding: 20px;
+  box-shadow: var(--shadow);
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: all 0.2s;
+}
+
+.pharmacie-card:hover {
+  border-color: var(--vert);
+  transform: translateY(-2px);
+}
+
+.pharmacie-card.active {
+  border-color: var(--vert);
+  background-color: var(--vert-clair);
+}
+
+.pharmacie-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.pharmacie-card-header h3 {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.badge-garde {
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 700;
+  background-color: var(--vert);
+  color: var(--texte);
+}
+
+.badge-fermee {
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 700;
+  background-color: #FFE8E8;
+  color: #CC0000;
+}
+
+.pharmacie-card p {
+  font-size: 13px;
+  color: var(--gris);
+  margin-bottom: 4px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.pharmacie-card .distance {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--vert-fonce);
+  margin-top: 8px;
+}
+
+.btn-itineraire {
+  margin-top: 12px;
+  width: 100%;
+  padding: 10px;
+  background-color: var(--vert);
+  border-radius: 10px;
+  font-size: 13px;
+  font-weight: 700;
+  transition: all 0.2s;
+}
+
+.btn-itineraire:hover {
+  background-color: var(--vert-fonce);
+}
+
+.carte-map {
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  height: 620px;
+}
+
+.carte-map .leaflet-container {
+  height: 100%;
+  width: 100%;
+  border-radius: 20px;
+}
+
+.filtre-bar {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.filtre-btn {
+  padding: 10px 20px;
+  border-radius: 24px;
+  border: 2px solid #E0E0E0;
+  background-color: var(--blanc);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--gris);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.filtre-btn:hover {
+  border-color: var(--vert);
+  color: var(--texte);
+}
+
+.filtre-btn.active {
+  border-color: var(--vert);
+  background-color: var(--vert);
+  color: var(--texte);
+}
