@@ -11,6 +11,8 @@ import CommandePage from "./pages/patient/CommandePage";
 import MedecinHome from "./pages/medecin/MedecinHome";
 import OrdonnancePage from "./pages/medecin/OrdonnancePage";
 import VideoConsultationPage from "./pages/medecin/VideoConsultationPage";
+import PlanningPage from "./pages/medecin/PlanningPage";
+import PatientsListPage from "./pages/medecin/PatientsListPage";
 import "./index.css";
 
 function App() {
@@ -29,6 +31,8 @@ function App() {
         <Route path="/medecin" element={<MedecinHome />} />
         <Route path="/medecin/ordonnance" element={<OrdonnancePage />} />
         <Route path="/medecin/video" element={<VideoConsultationPage />} />
+        <Route path="/medecin/planning" element={<PlanningPage />} />
+        <Route path="/medecin/patients" element={<PatientsListPage />} />
       </Routes>
     </BrowserRouter>
   );

@@ -1,0 +1,175 @@
+.planning-container {
+  padding: 40px;
+  background-color: var(--gris-clair);
+  min-height: 90vh;
+}
+
+.planning-container h1 {
+  font-size: 28px;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+.planning-container h1 span {
+  color: var(--vert-fonce);
+}
+
+.planning-container > p {
+  color: var(--gris);
+  margin-bottom: 32px;
+}
+
+.planning-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--blanc);
+  border-radius: 16px;
+  padding: 16px 24px;
+  box-shadow: var(--shadow);
+  margin-bottom: 24px;
+}
+
+.planning-nav h2 {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.planning-nav-btns {
+  display: flex;
+  gap: 10px;
+}
+
+.nav-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: var(--vert-clair);
+  color: var(--vert-fonce);
+  font-size: 16px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.nav-btn:hover {
+  background-color: var(--vert);
+}
+
+.jours-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.jour-card {
+  background-color: var(--blanc);
+  border-radius: 16px;
+  padding: 16px;
+  box-shadow: var(--shadow);
+  text-align: center;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: all 0.2s;
+}
+
+.jour-card:hover {
+  border-color: var(--vert);
+}
+
+.jour-card.active {
+  background-color: var(--vert);
+  border-color: var(--vert-fonce);
+}
+
+.jour-card .jour-nom {
+  font-size: 12px;
+  color: var(--gris);
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.jour-card.active .jour-nom {
+  color: var(--texte);
+}
+
+.jour-card .jour-num {
+  font-size: 22px;
+  font-weight: 800;
+  margin: 6px 0;
+}
+
+.jour-card .jour-count {
+  font-size: 11px;
+  color: var(--vert-fonce);
+  font-weight: 700;
+}
+
+.jour-card.active .jour-count {
+  color: var(--texte);
+}
+
+.creneaux-jour {
+  background-color: var(--blanc);
+  border-radius: 20px;
+  padding: 28px;
+  box-shadow: var(--shadow);
+}
+
+.creneaux-jour h3 {
+  font-size: 18px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.creneau-planning-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+  border-radius: 14px;
+  margin-bottom: 10px;
+  border-left: 4px solid var(--vert);
+  background-color: var(--vert-clair);
+}
+
+.creneau-planning-item.libre {
+  border-left-color: #E0E0E0;
+  background-color: var(--gris-clair);
+}
+
+.creneau-heure {
+  font-size: 15px;
+  font-weight: 800;
+  color: var(--vert-fonce);
+  min-width: 70px;
+}
+
+.creneau-detail h4 {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.creneau-detail p {
+  font-size: 12px;
+  color: var(--gris);
+  margin-top: 2px;
+}
+
+.creneau-statut {
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 700;
+  background-color: var(--vert);
+}
+
+.creneau-statut.libre {
+  background-color: #E0E0E0;
+  color: var(--gris);
+}

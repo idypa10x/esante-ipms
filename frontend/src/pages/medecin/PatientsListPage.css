@@ -1,0 +1,123 @@
+.patients-container {
+  padding: 40px;
+  background-color: var(--gris-clair);
+  min-height: 90vh;
+}
+
+.patients-container h1 {
+  font-size: 28px;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+.patients-container h1 span {
+  color: var(--vert-fonce);
+}
+
+.patients-container > p {
+  color: var(--gris);
+  margin-bottom: 32px;
+}
+
+.patients-search {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: var(--blanc);
+  border-radius: 14px;
+  padding: 12px 20px;
+  box-shadow: var(--shadow);
+  margin-bottom: 28px;
+  max-width: 420px;
+}
+
+.patients-search input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+
+.patients-search svg {
+  color: var(--vert-fonce);
+}
+
+.patients-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.patient-card-item {
+  background-color: var(--blanc);
+  border-radius: 20px;
+  padding: 24px;
+  box-shadow: var(--shadow);
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  transition: transform 0.2s;
+}
+
+.patient-card-item:hover {
+  transform: translateY(-4px);
+}
+
+.patient-avatar-sm {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  background-color: var(--vert-clair);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  flex-shrink: 0;
+}
+
+.patient-card-info {
+  flex: 1;
+}
+
+.patient-card-info h3 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.patient-card-info p {
+  font-size: 13px;
+  color: var(--gris);
+  margin-bottom: 2px;
+}
+
+.patient-card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 10px;
+}
+
+.patient-tag {
+  font-size: 11px;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 14px;
+  background-color: var(--vert-clair);
+  color: var(--vert-fonce);
+}
+
+.btn-voir-dossier {
+  margin-top: 14px;
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: var(--vert);
+  border-radius: 10px;
+  font-size: 12px;
+  font-weight: 700;
+  transition: all 0.2s;
+}
+
+.btn-voir-dossier:hover {
+  background-color: var(--vert-fonce);
+}
