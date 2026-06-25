@@ -1,0 +1,181 @@
+.ordonnance-container {
+  padding: 40px;
+  background-color: var(--gris-clair);
+  min-height: 90vh;
+}
+
+.ordonnance-container h1 {
+  font-size: 28px;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+.ordonnance-container h1 span {
+  color: var(--vert-fonce);
+}
+
+.ordonnance-container > p {
+  color: var(--gris);
+  margin-bottom: 32px;
+}
+
+.ordonnance-form {
+  background-color: var(--blanc);
+  border-radius: 20px;
+  padding: 36px;
+  box-shadow: var(--shadow);
+  max-width: 700px;
+}
+
+.ordonnance-entete {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: var(--vert-clair);
+  border-radius: 12px;
+  margin-bottom: 28px;
+}
+
+.ordonnance-entete h3 {
+  font-size: 16px;
+  font-weight: 800;
+  color: var(--vert-fonce);
+}
+
+.ordonnance-entete p {
+  font-size: 13px;
+  color: var(--gris);
+  margin-top: 4px;
+}
+
+.select-patient {
+  width: 100%;
+  padding: 12px 16px;
+  border: 2px solid #E0E0E0;
+  border-radius: 12px;
+  font-size: 14px;
+  outline: none;
+  margin-bottom: 24px;
+  transition: border-color 0.2s;
+}
+
+.select-patient:focus {
+  border-color: var(--vert);
+}
+
+.medicaments-section h3 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.medicament-row {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 12px;
+  align-items: center;
+}
+
+.medicament-row input {
+  flex: 2;
+  padding: 10px 14px;
+  border: 2px solid #E0E0E0;
+  border-radius: 10px;
+  font-size: 13px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.medicament-row input:focus {
+  border-color: var(--vert);
+}
+
+.medicament-row input:last-of-type {
+  flex: 1;
+}
+
+.btn-remove {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #FFE8E8;
+  color: #CC0000;
+  font-size: 18px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: none;
+  transition: all 0.2s;
+}
+
+.btn-remove:hover {
+  background-color: #FF4D4D;
+  color: white;
+}
+
+.btn-add-med {
+  padding: 10px 20px;
+  background-color: var(--vert-clair);
+  color: var(--vert-fonce);
+  font-weight: 700;
+  font-size: 13px;
+  border-radius: 10px;
+  border: 2px dashed var(--vert);
+  cursor: pointer;
+  margin-top: 8px;
+  transition: all 0.2s;
+  width: 100%;
+}
+
+.btn-add-med:hover {
+  background-color: var(--vert);
+  color: var(--texte);
+}
+
+.notes-section {
+  margin-top: 24px;
+}
+
+.notes-section label {
+  font-size: 14px;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.notes-section textarea {
+  width: 100%;
+  padding: 12px 16px;
+  border: 2px solid #E0E0E0;
+  border-radius: 12px;
+  font-size: 13px;
+  outline: none;
+  resize: vertical;
+  min-height: 100px;
+  font-family: inherit;
+  transition: border-color 0.2s;
+}
+
+.notes-section textarea:focus {
+  border-color: var(--vert);
+}
+
+.btn-envoyer {
+  width: 100%;
+  padding: 14px;
+  background-color: var(--vert);
+  color: var(--texte);
+  font-weight: 700;
+  font-size: 16px;
+  border-radius: 12px;
+  margin-top: 24px;
+  transition: all 0.2s;
+}
+
+.btn-envoyer:hover {
+  background-color: var(--vert-fonce);
+  transform: scale(1.02);
+}
