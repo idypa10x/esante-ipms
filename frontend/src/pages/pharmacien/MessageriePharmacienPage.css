@@ -1,0 +1,20 @@
+.messagerie-pharmacien-container {
+  padding: 40px;
+  background-color: var(--gris-clair);
+  min-height: 90vh;
+}
+
+.messagerie-pharmacien-container h1 {
+  font-size: 28px;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+.messagerie-pharmacien-container h1 span {
+  color: var(--vert-fonce);
+}
+
+.messagerie-pharmacien-container > p {
+  color: var(--gris);
+  margin-bottom: 32px;
+}
