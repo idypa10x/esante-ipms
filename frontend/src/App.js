@@ -1,4 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { AuthProvider } from "./contexts/AuthContext";
+import ProtectedRoute from "./routes/ProtectedRoute";
 import Navbar from "./components/layout/Navbar";
 import Footer from "./components/layout/Footer";
 import HomePage from "./pages/HomePage";
@@ -28,32 +30,43 @@ import "./index.css";
 function App() {
   return (
     <BrowserRouter>
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/login" element={<LoginPage />} />
-        <Route path="/register" element={<RegisterPage />} />
-        <Route path="/patient" element={<PatientHome />} />
-        <Route path="/patient/rdv" element={<PriseRdvPage />} />
-        <Route path="/patient/ordonnances" element={<OrdonnancesPage />} />
-        <Route path="/patient/dossier" element={<DossierPage />} />
-        <Route path="/patient/commande" element={<CommandePage />} />
-        <Route path="/medecin" element={<MedecinHome />} />
-        <Route path="/medecin/ordonnance" element={<OrdonnancePage />} />
-        <Route path="/medecin/video" element={<VideoConsultationPage />} />
-        <Route path="/medecin/planning" element={<PlanningPage />} />
-        <Route path="/medecin/patients" element={<PatientsListPage />} />
-        <Route path="/medecin/messagerie" element={<MessagerieMedecinPage />} />
-        <Route path="/medecin/statistiques" element={<StatistiquesPage />} />
-        <Route path="/carte" element={<CartePharmaciePage />} />
-        <Route path="/pharmacien" element={<PharmacienHome />} />
-        <Route path="/pharmacien/stock" element={<StockPage />} />
-        <Route path="/pharmacien/commandes" element={<CommandesPharmacienPage />} />
-        <Route path="/pharmacien/messagerie" element={<MessageriePharmacienPage />} />
-        <Route path="/admin" element={<AdminHome />} />
-        <Route path="/recherche-medicament" element={<RechercheMedicamentPage />} />
-      </Routes>
-      <Footer />
+      <AuthProvider>
+        <Navbar />
+        <Routes>
+          {/* Routes publiques */}
+          <Route path="/" element={<HomePage />} />
+          <Route path="/login" element={<LoginPage />} />
+          <Route path="/register" element={<RegisterPage />} />
+          <Route path="/carte" element={<CartePharmaciePage />} />
+          <Route path="/recherche-medicament" element={<RechercheMedicamentPage />} />
+
+          {/* Routes Patient */}
+          <Route path="/patient" element={<ProtectedRoute role="patient"><PatientHome /></ProtectedRoute>} />
+          <Route path="/patient/rdv" element={<ProtectedRoute role="patient"><PriseRdvPage /></ProtectedRoute>} />
+          <Route path="/patient/ordonnances" element={<ProtectedRoute role="patient"><OrdonnancesPage /></ProtectedRoute>} />
+          <Route path="/patient/dossier" element={<ProtectedRoute role="patient"><DossierPage /></ProtectedRoute>} />
+          <Route path="/patient/commande" element={<ProtectedRoute role="patient"><CommandePage /></ProtectedRoute>} />
+
+          {/* Routes Médecin */}
+          <Route path="/medecin" element={<ProtectedRoute role="medecin"><MedecinHome /></ProtectedRoute>} />
+          <Route path="/medecin/ordonnance" element={<ProtectedRoute role="medecin"><OrdonnancePage /></ProtectedRoute>} />
+          <Route path="/medecin/video" element={<ProtectedRoute role="medecin"><VideoConsultationPage /></ProtectedRoute>} />
+          <Route path="/medecin/planning" element={<ProtectedRoute role="medecin"><PlanningPage /></ProtectedRoute>} />
+          <Route path="/medecin/patients" element={<ProtectedRoute role="medecin"><PatientsListPage /></ProtectedRoute>} />
+          <Route path="/medecin/messagerie" element={<ProtectedRoute role="medecin"><MessagerieMedecinPage /></ProtectedRoute>} />
+          <Route path="/medecin/statistiques" element={<ProtectedRoute role="medecin"><StatistiquesPage /></ProtectedRoute>} />
+
+          {/* Routes Pharmacien */}
+          <Route path="/pharmacien" element={<ProtectedRoute role="pharmacien"><PharmacienHome /></ProtectedRoute>} />
+          <Route path="/pharmacien/stock" element={<ProtectedRoute role="pharmacien"><StockPage /></ProtectedRoute>} />
+          <Route path="/pharmacien/commandes" element={<ProtectedRoute role="pharmacien"><CommandesPharmacienPage /></ProtectedRoute>} />
+          <Route path="/pharmacien/messagerie" element={<ProtectedRoute role="pharmacien"><MessageriePharmacienPage /></ProtectedRoute>} />
+
+          {/* Routes Admin */}
+          <Route path="/admin" element={<ProtectedRoute role="admin"><AdminHome /></ProtectedRoute>} />
+        </Routes>
+        <Footer />
+      </AuthProvider>
     </BrowserRouter>
   );
 }
